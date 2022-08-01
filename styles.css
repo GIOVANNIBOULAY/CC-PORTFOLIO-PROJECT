@@ -1,0 +1,84 @@
+
+html {
+    padding: 1.5rem;
+    display: table;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    color: #333;
+    background-color: #eee;
+    list-style-type: none;
+    transition: 0.1s;
+    width: 32%;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* GENERAL INFO */
+header {
+    display: inline-flex;   /* FIND OUT HOW TO CENTER THE HEADER WITH THE MAIN */
+    margin: 3rem auto;
+    padding: 0 auto;
+    text-align: justify;
+    text-align-last: justify;
+    position: relative;
+    flex-direction: row;
+}
+
+a {
+    color: red;
+}
+
+a:active {
+    color: darkred;
+}
+
+.info {
+    margin-left: 6rem;
+}
+
+.header_info {
+    margin: 0;
+}
+
+/* PROJECTS */
+main {
+    margin-top: 1.5rem;
+}
+
+.projects_container {
+    margin-bottom: 6rem;
+}
+
+.project {
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+article .proj_date {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.proj_desc {
+    text-align: justify;
+    text-align-last: justify;
+}
+
+/* SKILLS */
+
+.skills_list {
+    padding: 0;
+    margin-left: 1.5rem;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.skills_list img {
+    margin-right: 1.2rem;
+}
