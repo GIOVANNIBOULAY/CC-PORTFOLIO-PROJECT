@@ -1,8 +1,8 @@
 
 html {
     padding: 1.5rem;
-    display: table;
-    margin: auto;
+    display: flex;
+    margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
     font-size: 15px;
@@ -10,13 +10,7 @@ html {
     background-color: #eee;
     list-style-type: none;
     transition: 0.1s;
-    width: 32%;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+    max-width: 100%;
 }
 
 /* GENERAL INFO */
@@ -24,9 +18,6 @@ header {
     display: inline-flex;   /* FIND OUT HOW TO CENTER THE HEADER WITH THE MAIN */
     margin: 3rem auto;
     padding: 0 auto;
-    text-align: justify;
-    text-align-last: justify;
-    position: relative;
     flex-direction: row;
 }
 
@@ -39,16 +30,19 @@ a:active {
 }
 
 .info {
-    margin-left: 6rem;
+    margin-left: 1rem;
 }
 
 .header_info {
     margin: 0;
+    line-height: 2.4rem;
+    flex-wrap: nowrap;
 }
 
 /* PROJECTS */
 main {
     margin-top: 1.5rem;
+    width: 69%;
 }
 
 .projects_container {
@@ -63,11 +57,40 @@ main {
 article .proj_date {
     font-size: 12px;
     margin-top: 0;
+    border-bottom: 1px solid #333;
+    position: relative;
+    cursor: pointer;
 }
 
-.proj_desc {
-    text-align: justify;
-    text-align-last: justify;
+article .proj_date::after {
+    content: '+';
+
+    position: absolute;
+    right: -5px;
+}
+
+article .proj_desc {
+    padding-top: 15px;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* JS STYLING LINK */
+
+.project.active .proj_desc {
+    height: 190px;
+    transition: .3s;
+}
+
+.project.active .proj_date {
+    transition: .3s;
+}
+
+.project.active .proj_date:after {
+    content: '-';
+    transition: .3s;
 }
 
 /* SKILLS */
@@ -75,8 +98,7 @@ article .proj_date {
 .skills_list {
     padding: 0;
     margin-left: 1.5rem;
-    text-align: justify;
-    text-align-last: justify;
+
 }
 
 .skills_list img {
