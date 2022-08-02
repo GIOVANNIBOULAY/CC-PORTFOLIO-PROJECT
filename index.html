@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <img id="profile-pic" src="images/profile-pic.jpg" alt="Giovanni's profile photo" width="150px" height="150px">
+        <img id="profile-pic" src="/images/profile-pic.jpg" alt="Giovanni's profile photo" width="210px" height="210px">
         <div class="info">
             <h1 class="header_info" id="name">GIOVANNI BOULAY</h1>
-            <p class="header_info" id="time">PROGRAMMING FOR [ TIME ] DAYS </p> <!-- JS TIME ELAPSED -->
+            <p class="header_info" id="time">PROGRAMMING FOR <span id="days"></span> DAYS </p> <!-- JS TIME ELAPSED -->
             <p class="header_info" id="email">giovanni.boulay@gmail.com</p>
             <a class="header_info" id="linkedin" href="https://bit.ly/gbLinkedIn" target="_blank">LINKEDIN</a>
             <a class="header_info" id="linkedin" href="https://github.com/GIOVANNIBOULAY" target="_blank">GITHUB</a>
@@ -21,17 +21,21 @@
             <p class="header_info" id="location">OTTAWA, ON</p>
         </div>
     </header>
-    <main>
+    <main class="accordion">
+        <h2>PROJECTS</h2>
         <section class="projects_container">
-            <h2>PROJECTS</h2>
             <article class="project">
                     <a href="https://thedojoclub.com" target="_blank"><strong>THE DOJO CLUB®</strong></a>
                     <p class="proj_date"><em>05.17 > now</em></p>
-                    <p href="#" class="proj_desc">used WIX to design a portfolio website showcase my creative projects in the disciplines of sound, photo, video. <br> it also includes a blog and a shop. <br> currently in the process of re-creating this site <span><a href="https://github.com/GIOVANNIBOULAY/thedojoclub" target="_blank">from scratch</a></span>.
-                </div>  
+                    <p href="#" class="proj_desc">used WIX to design a portfolio website showcase my creative projects in the disciplines of sound, photo, video. <br> it also includes a blog and a shop. <br> currently in the process of re-creating this site <span><a href="https://github.com/GIOVANNIBOULAY/thedojoclub" target="_blank">from scratch</a>.</span></p>
             </article>
             <article class="project">
-                <a href="https://github.com/GIOVANNIBOULAY/CS-TEA-SHOP"><strong>PRACTICE: "TEA SHOP"</strong></a>
+                <a href="https://giovanniboulay.github.io/numberGuesser/" target="_blank"><strong>NUMBER GUESSER</strong></a>
+                <p class="proj_date"><em>06.22</em></p>
+                <p href="#" class="proj_desc">used JavaScript functions to power a small guessing game.</p>
+            </article>
+            <article class="project">
+                <a href="https://giovanniboulay.github.io/CS-TEA-SHOP/" target="_blank"><strong>PRACTICE: "TEA SHOP"</strong></a>
                 <p class="proj_date"><em>19.05.22</em></p>
                 <p href="#" class="proj_desc">used HTML + CSS to design a homepage for an imaginary coffee shop to practice the Flexbox and the box model.</p>
             </article>
@@ -47,5 +51,6 @@
             </ul>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html> 
