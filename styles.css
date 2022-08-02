@@ -12,6 +12,7 @@ html {
     transition: 0.1s;
     max-width: 100%;
     justify-content: center;
+    overflow: auto;
 }
 
 /* GENERAL INFO */
@@ -108,7 +109,12 @@ article .proj_desc {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+
+    html {
+        max-width: 100%;
+    }
+    
     .header_info {
         margin: 0;
         line-height: 2.4rem;
@@ -134,6 +140,15 @@ article .proj_desc {
         margin-left: 1.5rem;
         width: 100%;
     }
+}
+
+@media (min-width: 505px) {
+
+    .project.active .proj_desc {
+        height: 150px;
+        transition: .3s;
+    }
+    
 }
 
 /*320px — 480px: Mobile devices
