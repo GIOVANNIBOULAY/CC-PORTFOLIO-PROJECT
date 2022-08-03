@@ -124,6 +124,8 @@ article .proj_desc {
 
     #profile-pic {
         margin-bottom: 3%;
+        width: 75%;
+        height: 75%;
     }
 
     .info {
