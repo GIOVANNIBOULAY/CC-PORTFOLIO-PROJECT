@@ -2,6 +2,7 @@
 html {
     padding: 1.5rem;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
@@ -12,7 +13,6 @@ html {
     transition: 0.1s;
     max-width: 100%;
     justify-content: center;
-    overflow: auto;
 }
 
 /* GENERAL INFO */
@@ -57,7 +57,7 @@ main {
 }
 
 article .proj_date {
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 0;
     border-bottom: 1px solid #333;
     position: relative;
@@ -109,16 +109,32 @@ article .proj_desc {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 390px) and (max-width: 720px) {
+@media only screen and (min-width: 300px) and (max-width: 720px) {
 
     html {
         max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #profile-pic {
+        margin-bottom: 3%;
+    }
+
+    .info {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
     }
     
     .header_info {
         margin: 0;
-        line-height: 2.4rem;
-        flex-wrap: nowrap;
+        line-height: 1.8rem;
     }
 
     #name {
